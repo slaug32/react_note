@@ -1,11 +1,4 @@
-import React from "react";
 import style from "./MyButton.module.css";
-
-// type MyButtonPropsType = {
-//   children: string
-//   props:any
-// };
-// : React.FC<MyButtonPropsType>
 
 const MyButton = ({ children, ...props }) => {
   return (
