@@ -18,6 +18,10 @@ const App = () => {
   const [page, setPage] = React.useState(1);
   const sortedAndSoarchedPosts = usePosts(posts, filter.sort, filter.search);
 
+  const func =()=>{
+    console.log("start")
+  }
+
   let pagesArray = getPageArray(totalPages);
 
   const [fetchPosts, isPostLoading, postError] = useFetching(async () => {
